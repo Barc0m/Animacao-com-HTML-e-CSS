@@ -1,0 +1,85 @@
+body
+{
+    background-color: rgb(2, 2, 70);
+    border-bottom: 15px solid rgb(4, 103, 5);
+}
+
+.game
+{
+    width:100%;
+    height: 600px;
+    border-bottom: 15px solid rgb(4, 103, 5);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient( rgb(14, 5, 133), rgb(55, 108, 255));
+}
+
+.kirbo
+{
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+}
+
+.nuvens
+{
+    position: absolute;
+    width: 550px;
+    animation: nuvens-animation 40s infinite linear;
+    opacity: 0.8;
+}
+
+.fundo
+{
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    animation: fundo-animation 60s infinite linear;
+}
+
+.fundo2
+{
+    position: absolute;
+    bottom: 0;
+    width: 900px;
+    animation: fundo-animation2 80s infinite linear;
+    opacity: 0.8;
+}
+
+
+@keyframes nuvens-animation
+{
+    from
+    {
+        right: -550px;
+    }
+    to 
+    {
+        right: 100%;
+    }
+}
+
+@keyframes fundo-animation
+{
+    from
+    {
+        right: -450px;
+    }
+    to 
+    {
+        right: 100%;
+    }
+}
+
+@keyframes fundo-animation2
+{
+    from
+    {
+        right: -900px;
+    }
+    to 
+    {
+        right: 100%;
+    }
+}
